@@ -1,0 +1,17 @@
+buildscript {
+    repositories {
+        maven {
+            url uri('../repo')
+            jcenter()
+        }
+    }
+    dependencies {
+        classpath group: 'de.wellnerbou', name: 'styleCodePlugin', version: '0.1-SNAPSHOT'
+    }
+}
+
+apply plugin: 'de.wellnerbou.gradle.stylecode'
+
+stylecode {
+    markdownFile = 'src/main/markdown/paulwellnerbou.md'
+}
