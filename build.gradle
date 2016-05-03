@@ -1,17 +1,21 @@
 buildscript {
     repositories {
         maven {
-            url uri('../repo')
+            mavenLocal()
             jcenter()
+            url  "http://dl.bintray.com/paulwellnerbou/maven"
         }
     }
     dependencies {
-        classpath group: 'de.wellnerbou', name: 'styleCodePlugin', version: '0.1-SNAPSHOT'
+        classpath group: 'de.wellnerbou', name: 'stylecode-plugin', version: '0.2'
     }
 }
 
+// Applying java plugin to provide clean task
+apply plugin: 'java'
 apply plugin: 'de.wellnerbou.gradle.stylecode'
 
 stylecode {
     markdownFile = 'src/main/markdown/example.md'
+    useResourcesFrom = 'http://paul.wellnerbou.de'
 }
