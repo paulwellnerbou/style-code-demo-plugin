@@ -13,5 +13,5 @@ buildscript {
 apply plugin: 'de.wellnerbou.gradle.stylecode'
 
 stylecode {
-    markdownFile = 'src/main/markdown/paulwellnerbou.md'
+    markdownFile = 'src/main/markdown/example.md'
 }
