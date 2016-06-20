@@ -7,7 +7,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath group: 'de.wellnerbou', name: 'stylecode-plugin', version: '0.3'
+        classpath group: 'de.wellnerbou', name: 'stylecode-plugin', version: '0.+'
     }
 }
 
